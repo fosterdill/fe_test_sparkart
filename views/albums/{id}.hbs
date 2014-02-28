@@ -3,9 +3,13 @@
   "title": "Album",
   "name": "Album",
   "resources": {
-      "facebook": {
+      "photos": {
         "url": "https://graph.facebook.com/{id}/photos"
       }
   }
 }
 }}
+
+{{#resources.photos.data}}
+  <img src="{{picture}}">
+{{/resources.photos.data}}
