@@ -3,8 +3,8 @@
 	"title": "Index",
 	"name": "index",
   "resources": {
-      "facebook": {
-          "url": "http://proxy.storyteller.io/facebook/Thekillers/photos",
+      "albums": {
+          "url": "http://proxy.storyteller.io/facebook/Thekillers/albums",
           "headers": {
               "Api-Key": "a30fc90a-2d45-49a5-a0fa-5fa99977a2b0",
               "Project": "fe_test_sparkart"
@@ -13,6 +13,10 @@
   }
 }
 }}
-
-{{{ context }}}
-
+<ul id="photos">
+  {{#resources.albums.data}}
+    <li>
+    <a href="/albums/{{id}}">name</a>
+    </li>
+  {{/resources.albums.data}}
+</ul>
