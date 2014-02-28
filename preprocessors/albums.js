@@ -1,8 +1,8 @@
-var date = require('datejs');
+require('datejs');
 module.exports = function ( context ) {
   var data = [];
 
-  //remove all album objects which contain no photos
+  //remove all albums which contain no photos
   for (var i = 0; i < context.resources.albums.data.length; i++) {
     if (context.resources.albums.data[i].count != undefined) {
       data.push(context.resources.albums.data[i]);

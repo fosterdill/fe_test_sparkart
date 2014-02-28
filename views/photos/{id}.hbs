@@ -1,0 +1,18 @@
+{{!
+{
+  "title": "Photo",
+  "name": "Photo",
+  "resources": {
+      "photo": {
+          "url": "http://proxy.storyteller.io/facebook/{id}",
+          "headers": {
+              "Api-Key": "a30fc90a-2d45-49a5-a0fa-5fa99977a2b0",
+              "Project": "fe_test_sparkart"
+          }
+      }
+  }
+}
+}}
+{{#resources.photo}}
+  <img src="{{images.0.source}}">
+{{/resources.photo}}
