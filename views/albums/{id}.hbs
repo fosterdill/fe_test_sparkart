@@ -10,10 +10,25 @@
                 "Project": "fe_test_sparkart"
             }
         }
-    }
+    },
+    "preprocessor": "photos.js"
   }
 }}
 
-{{#resources.photos.data}}
-  <a href="/photos/{{id}}"><img src="{{picture}}"></a>
-{{/resources.photos.data}}
+<h1 class="album-header">
+  Photos
+</h1>
+<ul id="album-list">
+  {{#resources.photos.data}}
+    <li class="album-item">
+      <div class="album-thumb">
+        <a href="/photos/{{id}}"><img src="{{picture}}"></a>
+        <div class="album-info">
+          <span class="album-name">{{name}}</span>
+          <p>{{created_time}}</p>
+        </div>
+      </div>
+    </li>
+  {{/resources.photos.data}}
+</ul>
+
