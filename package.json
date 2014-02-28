@@ -21,6 +21,7 @@
     "grunt-prompt": "~0.1.2"
   },
   "dependencies": {
+    "datejs": "~1.0.0",
     "solidus": "~0.1.3"
   }
 }

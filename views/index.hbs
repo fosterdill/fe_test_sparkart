@@ -14,10 +14,11 @@
   "preprocessor": "albums.js"
 }
 }}
-<ul id="photos">
+<ul id="albums">
   {{#resources.albums.data}}
     <li>
       <a href="/albums/{{id}}">{{name}}</a>
+      <span>({{created_time}})</span>
     </li>
   {{/resources.albums.data}}
 </ul>
