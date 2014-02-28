@@ -10,13 +10,14 @@
               "Project": "fe_test_sparkart"
           }
       }
-  }
+  },
+  "preprocessor": "albums.js"
 }
 }}
 <ul id="photos">
   {{#resources.albums.data}}
     <li>
-    <a href="/albums/{{id}}">name</a>
+      <a href="/albums/{{id}}">{{name}}</a>
     </li>
   {{/resources.albums.data}}
 </ul>
