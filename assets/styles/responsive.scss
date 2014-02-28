@@ -1,0 +1,21 @@
+
+@media screen and (min-width: 28.75em) {
+  .item {
+    width: 280px;
+  }
+  body {
+    width: 565px;
+    margin: 0px auto;
+  }
+
+}
+
+@media screen and (min-width: 40.5em) {
+  .item {
+    width: 280px;
+  }
+  body {
+    width: 840px;
+    margin: 0px auto;
+  }
+}

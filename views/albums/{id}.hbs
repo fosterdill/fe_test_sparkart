@@ -15,16 +15,15 @@
   }
 }}
 
-<h1 class="album-header">
+<h1 class="header">
   Photos
 </h1>
-<ul id="album-list">
+<ul id="list">
   {{#resources.photos.data}}
-    <li class="album-item">
-      <div class="album-thumb">
+    <li class="item">
+      <div class="thumb">
         <a href="/photos/{{id}}"><img src="{{picture}}"></a>
-        <div class="album-info">
-          <span class="album-name">{{name}}</span>
+        <div class="photo-info">
           <p>{{created_time}}</p>
         </div>
       </div>

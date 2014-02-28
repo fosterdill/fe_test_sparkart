@@ -14,18 +14,18 @@
     "preprocessor": "albums.js"
   }
 }}
-<h1 class="album-header">
+<h1 class="header">
   Albums
 </h1>
-<ul id="album-list">
+<ul id="list">
   {{#resources.albums.data}}
-    <li class="album-item">
-      <div class="album-thumb">
+    <li class="item">
+      <div class="thumb">
         <a href="/albums/{{id}}">
-          <img class="album-thumb" src="https://graph.facebook.com/{{id}}/picture">
+          <img class="thumb" src="https://graph.facebook.com/{{id}}/picture">
         </a>
-        <div class="album-info">
-          <span class="album-name">{{name}}</span>
+        <div class="info">
+          <span class="name">{{name}}</span>
           <p>{{created_time}}</p>
         </div>
       </div>
